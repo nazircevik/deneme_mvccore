@@ -1,0 +1,10 @@
+﻿@model deneme_mvccore.Models.StudentListViewModel
+@{
+    Layout = null;
+}
+
+@foreach (var item in Model.Students)
+{
+    <br />
+    @item.FirstName
+}

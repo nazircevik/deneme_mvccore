@@ -18,9 +18,9 @@ namespace deneme_mvccore.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public string Index()
         {
-            throw new Exception("some ex");
+            return "hi";
         }
 
         public IActionResult Privacy()

@@ -10,12 +10,14 @@ namespace deneme_mvccore.Fİlters
     {
         public void OnActionExecuted(ActionExecutedContext context)
         {
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
+           //method başladığında
         }
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
             throw new NotImplementedException();
+            //method bittğinde çalışacak kısım
         }
     }
 }

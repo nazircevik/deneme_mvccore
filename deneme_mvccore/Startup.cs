@@ -28,7 +28,8 @@ namespace deneme_mvccore
             var connection = @"Server=(localdb)\mssqllocaldb;Database=SchoolDb; Trusted_Connection=true  ";
             services.AddDbContext<SchoolContext>(options => options.UseSqlServer(connection));
             services.AddRazorPages();
-
+            services.AddDistributedMemoryCache();
+            services.AddSession();
 
         }
 
@@ -46,6 +47,7 @@ namespace deneme_mvccore
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();

@@ -20,7 +20,7 @@ namespace deneme_mvccore.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            throw new Exception("some ex");
         }
 
         public IActionResult Privacy()

@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "deneme_mvccore", "deneme_mvccore\deneme_mvccore.csproj", "{B5724900-DFE2-470A-A034-CABC4AAA6633}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreWithAngular", "AspNetCoreWithAngular\AspNetCoreWithAngular.csproj", "{90D01F5F-FBED-4A43-9F11-6A03F475139D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B5724900-DFE2-470A-A034-CABC4AAA6633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5724900-DFE2-470A-A034-CABC4AAA6633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5724900-DFE2-470A-A034-CABC4AAA6633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D01F5F-FBED-4A43-9F11-6A03F475139D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D01F5F-FBED-4A43-9F11-6A03F475139D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D01F5F-FBED-4A43-9F11-6A03F475139D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D01F5F-FBED-4A43-9F11-6A03F475139D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

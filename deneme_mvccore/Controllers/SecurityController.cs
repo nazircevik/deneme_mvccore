@@ -85,7 +85,8 @@ namespace deneme_mvccore.Controllers
             if (result.Succeeded)
             {
                 var confirmationCode = _usermanager.GenerateEmailConfirmationTokenAsync(user);
-                var callBackUrl = Url.Action("ConfirmEmail", "Security", new { user.Id, code = confirmationCode });
+                var callBackUrl = Url.Action("ConfirmEmail", "Security",
+                    new { userId=user.Id, code = confirmationCode.Result });
                 // Send Email
 
                 return RedirectToAction("Index", "Student");
@@ -98,7 +99,7 @@ namespace deneme_mvccore.Controllers
             {
                 return RedirectToAction("Index", "Student");
             }
-            var user = await _usermanager.FindByNameAsync(userId);
+            var user = await _usermanager.FindByIdAsync(userId);
             if (user == null)
             {
                 throw new ApplicationException("Unable to find the user");

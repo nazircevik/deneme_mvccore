@@ -58,9 +58,9 @@ namespace deneme_mvccore
 
             services.ConfigureApplicationCookie(options =>
             {
-                options.LoginPath = "Security/Login";
-                options.LogoutPath = "Security/Logout";
-                options.AccessDeniedPath = "Security/AccesDenied";
+                options.LoginPath = "/Security/Login";
+                options.LogoutPath = "/Security/Logout";
+                options.AccessDeniedPath = "/Security/AccesDenied";
                 options.SlidingExpiration = true;
                 options.Cookie = new CookieBuilder
                 {

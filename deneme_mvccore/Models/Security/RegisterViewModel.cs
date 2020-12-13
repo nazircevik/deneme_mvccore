@@ -24,8 +24,8 @@ namespace deneme_mvccore.Models.Security
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [Required]
-        public int Age { get; set; }
+       // [Required]
+     //   public int Age { get; set; }
 
     }
 }
